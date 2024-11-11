@@ -353,4 +353,5 @@ Expose daemon on… Add the *.docker.internal…: https://supabase.com/docs/guid
 Pull Supabase directory from GIT by initiating the git pull command.
 supabase start
 ```
+
 You can use the `supabase stop` command at any time to stop all services (without resetting your local database). Use `supabase stop --no-backup` to stop all services and reset your local database.
