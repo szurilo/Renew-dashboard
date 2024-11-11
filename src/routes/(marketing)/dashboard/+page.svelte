@@ -8,4 +8,4 @@
 
 <div class="py-8 lg:py-12 px-6 max-w-lg mx-auto">
   Hello Dashboard!
-</div>
+</div> 
