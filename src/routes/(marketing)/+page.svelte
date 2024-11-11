@@ -242,7 +242,7 @@
         <a href="/login/sign_up">
           <button class="btn btn-primary btn-sm px-6">Let's get started</button>
         </a>
-        <a href="/notexists_path_for_Github_Actions_test_purpose">
+        <a href="/notexists_path_for_Github_Actions_test_purpose_again">
           <button class="btn btn-secondary btn-sm px-6">Try first</button>
         </a>
         <a data-canny-link href="https://email-away.canny.io" target="_blank">
