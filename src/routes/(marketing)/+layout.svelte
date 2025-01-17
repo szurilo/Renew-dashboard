@@ -93,7 +93,7 @@
           class="text-4xl md:text-6xl font-bold px-2"
           style="line-height: 1.2;"
         >
-          Email away
+          Renew
         </div>
       </a>
     </aside>
