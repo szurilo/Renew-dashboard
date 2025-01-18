@@ -32,7 +32,7 @@
 <path d="M17.5 9.74145C17.7095 9.53198 18.0491 9.53198 18.2586 9.74145C18.468 9.95092 18.468 10.2905 18.2586 10.5C18.0491 10.7095 17.7095 10.7095 17.5 10.5C17.2905 10.2905 17.2905 9.95092 17.5 9.74145Z" fill="#1C274C"/>`,
     },
     {
-      name: "Unlimited redesign",
+      name: "Unlimited renewals",
       description:
         "The result is not your cup of tea? No worries, you can always request a new one.",
       svgContent: `<path
@@ -94,18 +94,18 @@
         class="text-4xl md:text-6xl font-bold px-2"
         style="line-height: 1.2;"
       >
-        Renew your website until it's fresh and crispy!
+        Renew your website to make it fresh and crispy!
       </div>
 
       <div class="mt-6 md:mt-10 text-sm md:text-lg">
-        Install <a href="/login/sign_up" class="link font-bold" target="_blank"
-          >Renew extension</a
-        > and start editing your website in Visual Studio Code or Cursor.
+        Use our <a href="/login/sign_up" class="link font-bold" target="_blank"
+          >extension</a
+        > and start renewing your website in Visual Studio Code or Cursor.
       </div>
 
       <div class="mt-6 md:mt-2">
         <a href="/login/sign_up">
-          <button class="btn btn-primary btn-sm px-6">Let's get started</button>
+          <button class="btn btn-primary btn-sm px-6">Install extension</button>
         </a>
         <a data-canny-link href="https://renew.canny.io" target="_blank">
           <button class="btn btn-outline btn-primary btn-sm px-6 mt-3 mx-2">
@@ -116,6 +116,48 @@
     </div>
   </div>
 </div>
+
+<div class="hero min-h-[60vh] mt-12">
+  <div class="hero-content text-center pb-16 pt-4 px-4">
+    <div class="max-w-lg">
+      <div
+        class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-4 pb-2"
+      >
+        The traditional way
+      </div>
+      <div class="px-4 mt-6 text-lg md:text-xl">
+        Hire an <span class="font-bold whitespace-nowrap"
+          >expensive contractor</span
+        >
+        to refresh your website. Or spend nights and weekends
+        <span class="underline decoration-secondary decoration-[3px]"
+          >doing it yourself.</span
+        >
+      </div>
+      <div
+        class="flex flex-col lg:flex-row mt-12 gap-6 place-content-center content-center"
+      >
+        <div class="flex mt-6 lg:mt-0">
+          <div class="my-auto">
+            <div
+              class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-4 pb-2"
+            >
+              The new way
+            </div>
+            <div class="px-4 mt-6 text-lg md:text-xl">
+              Let <span class="font-bold whitespace-nowrap">generative AI</span>
+              refresh your website. And save yourself
+              <span class="underline decoration-secondary decoration-[3px]"
+                >time and money.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="min-h-[60vh]">
   <div class="pt-20 pb-8 px-7">
     <div class="max-w-lg mx-auto text-center">
@@ -123,14 +165,6 @@
         class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent pb-2"
       >
         Explore the Features
-      </div>
-      <div class="mt-4 text-xl font-bold">
-        in Visual Studio Code or
-        <span
-          class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
-        >
-          Cursor
-        </span>
       </div>
     </div>
 
@@ -213,74 +247,20 @@
     </div>
   </div>
 </div>
-<div class="hero min-h-[60vh] mt-12">
-  <div class="hero-content text-center pb-16 pt-4 px-4">
-    <div class="max-w-lg">
-      <div
-        class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mt-4 pb-2"
-      >
-        See it in Action
-      </div>
-      <div
-        class="flex flex-col lg:flex-row mt-6 gap-6 place-content-center content-center"
-      >
-        <div class="hidden md:block">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
-            <div class="mockup-browser border">
-              <div class="mockup-browser-toolbar">
-                <div class="input" style="background:#eee;">
-                  https://criticalmoments.io
-                </div>
-              </div>
-              <div class="flex justify-center">
-                <img
-                  alt="Screenshot of criticalmoments.io homepage"
-                  class="aspect-[2044/1242]"
-                  src="/images/example-home.png"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="md:hidden">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
-            <div class="card shadow-xl border overflow-hidden">
-              <img
-                alt="Screenshot of criticalmoments.io homepage"
-                class="aspect-[2044/1242]"
-                src="/images/example-home.png"
-              />
-            </div></a
-          >
-        </div>
-        <div class="min-w-[270px] lg:min-w-[420px] flex mt-6 lg:mt-0">
-          <div class="my-auto">
-            <div class="px-4 text-lg md:text-xl">
-              <a href="https://criticalmoments.io" class="" target="_blank"
-                >SaaS Starter was created by <span
-                  class="font-bold whitespace-nowrap">Critical Moments</span
-                >: a SDK to to help mobile apps
-                <span class="underline decoration-secondary decoration-[3px]"
-                  >increase conversion rates and app-ratings.</span
-                ></a
-              >
-            </div>
-            <div class="px-4 mt-6 text-lg md:text-xl">
-              Our <a
-                href="https://criticalmoments.io"
-                class="link font-bold"
-                target="_blank">webpage</a
-              > is the best example of SaaS Starter with style and real content.
-            </div>
-            <div class="mt-4 text-large">
-              <a href="https://criticalmoments.io" target="_blank">
-                <button class="btn btn-primary btn-wide mt-3"
-                  >See it in Action</button
-                >
-              </a>
-            </div>
-          </div>
-        </div>
+
+<div class="hero">
+  <div class="hero-content text-center py-12">
+    <div class="mt-4 text-large">
+      <a href="/login/sign_up" target="_blank">
+        <button class="btn btn-primary btn-wide mt-3">Install extension</button>
+      </a>
+      <div class="flex justify-center mt-3">
+        <img
+          alt="Logo of Visual Studio Code"
+          class="w-10 m-2"
+          src="vscode_logo.svg"
+        />
+        <img alt="Logo of Cursor" class="w-10 m-2" src="cursor_logo.svg" />
       </div>
     </div>
   </div>

@@ -79,7 +79,7 @@
   >
     <div class="px-6">
       <h1 class="text-2xl lg:text-4xl font-bold mb-4">Contact Us</h1>
-      <p class="text-lg">Talk to one of our service professionals to:</p>
+      <p class="text-lg">and</p>
       <ul class="list-disc list-outside pl-6 py-4 space-y-1">
         <li class="">Get a live demo</li>
         <li class="">Discuss your specific needs</li>
