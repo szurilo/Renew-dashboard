@@ -159,18 +159,6 @@
             <p class="text-sm">
               {feature.description}
             </p>
-            {#if feature.link}
-              <a
-                href={feature.link}
-                class="pb-4"
-                target={feature.newPage ? "_blank" : ""}
-              >
-                <button
-                  class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
-                  >{feature.linkText ? feature.linkText : "Try It"}</button
-                >
-              </a>
-            {/if}
           </div>
         </div>
       {/each}
@@ -219,20 +207,6 @@
             <p class="text-sm">
               {notToExpect.description}
             </p>
-            {#if notToExpect.link}
-              <a
-                href={notToExpect.link}
-                class="pb-4"
-                target={notToExpect.newPage ? "_blank" : ""}
-              >
-                <button
-                  class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
-                  >{notToExpect.linkText
-                    ? notToExpect.linkText
-                    : "Try It"}</button
-                >
-              </a>
-            {/if}
           </div>
         </div>
       {/each}
