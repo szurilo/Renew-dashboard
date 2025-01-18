@@ -12,7 +12,7 @@
 
 <br/>
 
-# Renew
+# Renew-dashboard
 
 ## Setup Local Development
 
@@ -20,7 +20,7 @@ On your development machine:
 
 ```
 npm install
-npm run dev -- --open
+npm run dev
 ```
 
 **Note:** for first time check [README.md](https://github.com/szurilo/Renew-dashboard/blob/main/README.md)
