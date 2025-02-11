@@ -19,6 +19,8 @@
 On your development machine:
 
 ```
+supabase start
+you can reach Supabase Studio here: http://localhost:54323/
 npm install
 npm run dev
 ```
