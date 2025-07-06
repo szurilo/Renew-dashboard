@@ -8,13 +8,25 @@
   let { data } = $props()
   let { supabase } = data
 
+  let redirectUri = $state<string | null>(null)
+  redirectUri = $page.url.searchParams.get("redirect_uri")
+
   onMount(() => {
-    supabase.auth.onAuthStateChange((event) => {
+    supabase.auth.onAuthStateChange(async (event) => {
       // Redirect to account after successful login
       if (event == "SIGNED_IN") {
         // Delay needed because order of callback not guaranteed.
         // Give the layout callback priority to update state or
         // we'll just bounch back to login when /account tries to load
+        const { data: session, error } = await supabase.auth.getSession()
+        if (error || !session) {
+          console.error("Error retrieving session:", error)
+          return
+        }
+        if (redirectUri) {
+          window.location.href =
+            redirectUri + `/auth?token=${session.session?.access_token}`
+        }
         setTimeout(() => {
           goto("/account")
         }, 1)
@@ -59,5 +71,11 @@
   <a class="underline" href="/login/forgot_password">Forgot password?</a>
 </div>
 <div class="text-l text-slate-800 mt-3">
-  Don't have an account? <a class="underline" href="/login/sign_up">Sign up</a>.
+  Don't have an account? {#if redirectUri}<a
+      class="underline"
+      href="/login/sign_up?redirect_uri={redirectUri}">Sign up</a
+    >.
+  {:else}
+    <a class="underline" href="/login/sign_up">Sign up</a>.
+  {/if}
 </div>

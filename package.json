@@ -1,7 +1,13 @@
 {
-  "name": "cmsassstarter",
+  "name": "renew",
+  "description": "Renew your website to make it fresh and crispy!",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://saasstarter-7s0.pages.dev/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szurilo/Renew-dashboard"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",

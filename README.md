@@ -14,6 +14,9 @@
 
 # Renew-dashboard
 
+Renew is a VsCode and Cursor extension that allows you to renew your website to make it fresh and crispy!\
+For the extension see: https://saasstarter-7s0.pages.dev/
+
 ## Setup Local Development
 
 On your development machine:
@@ -25,4 +28,4 @@ npm install
 npm run dev
 ```
 
-**Note:** for first time check [README.md](https://github.com/szurilo/Renew-dashboard/blob/main/README.md)
+**Note:** for first time check [README_SaasStarter.md](README_SaasStarter.md)

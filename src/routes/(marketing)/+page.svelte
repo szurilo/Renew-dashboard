@@ -4,6 +4,8 @@
     WebsiteBaseUrl,
     WebsiteDescription,
   } from "./../../config"
+  import type { PageData } from "./$types"
+  export let data: PageData
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -97,16 +99,39 @@
         Renew your website to make it fresh and crispy!
       </div>
 
-      <div class="mt-6 md:mt-10 text-sm md:text-lg">
-        Use our <a href="/login/sign_up" class="link font-bold" target="_blank"
-          >extension</a
-        > and start renewing your website in Visual Studio Code or Cursor.
+      <div class="mt-6 mb-6 md:mt-10 text-sm md:text-lg">
+        Use our <span class="font-bold whitespace-nowrap">extension</span>
+        and start renewing your website in
+        <span class="underline decoration-secondary decoration-[3px]"
+          >Visual Studio Code</span
+        >
+        or
+        <span class="underline decoration-secondary decoration-[3px]"
+          >Cursor</span
+        >.
       </div>
+      <video controls class="flex-[1] rounded-lg shadow-lg">
+        <source src="./videos/Renew promo video.webm" type="video/webm" />
+        <source src="./videos/Renew promo video.mp4" type="video/mp4" />
+        <track kind="captions" />
+        Your browser does not support the video tag.
+      </video>
 
-      <div class="mt-6 md:mt-2">
-        <a href="/login/sign_up">
-          <button class="btn btn-primary btn-sm px-6">Install extension</button>
-        </a>
+      <div class="mt-6 md:mt-6">
+        {#if data.session}
+          <a href="vscode:extension/renew.renew">
+            <button class="btn btn-primary btn-sm px-6"
+              >Install extension</button
+            >
+          </a>
+        {:else}
+          <a href="/login">
+            <button class="btn btn-primary btn-sm px-6"
+              >Install extension</button
+            >
+          </a>
+        {/if}
+
         <a data-canny-link href="https://renew.canny.io" target="_blank">
           <button class="btn btn-outline btn-primary btn-sm px-6 mt-3 mx-2">
             Give feedback
@@ -251,9 +276,19 @@
 <div class="hero">
   <div class="hero-content text-center py-12">
     <div class="mt-4 text-large">
-      <a href="/login/sign_up" target="_blank">
-        <button class="btn btn-primary btn-wide mt-3">Install extension</button>
-      </a>
+      {#if data.session}
+        <a href="vscode:extension/renew.renew">
+          <button class="btn btn-primary btn-wide mt-3"
+            >Install extension</button
+          >
+        </a>
+      {:else}
+        <a href="/login">
+          <button class="btn btn-primary btn-wide mt-3"
+            >Install extension</button
+          >
+        </a>
+      {/if}
       <div class="flex justify-center mt-3">
         <img
           alt="Logo of Visual Studio Code"

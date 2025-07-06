@@ -1,8 +1,12 @@
 <script lang="ts">
   import { Auth } from "@supabase/auth-ui-svelte"
   import { sharedAppearance, oauthProviders } from "../login_config"
+  import { page } from "$app/stores"
 
   let { data } = $props()
+
+  let redirectUri = $state<string | null>(null)
+  redirectUri = $page.url.searchParams.get("redirect_uri")
 </script>
 
 <svelte:head>
@@ -21,5 +25,11 @@
   additionalData={undefined}
 />
 <div class="text-l text-slate-800 mt-4 mb-2">
-  Have an account? <a class="underline" href="/login/sign_in">Sign in</a>.
+  Have an account? {#if redirectUri}<a
+      class="underline"
+      href="/login/sign_in?redirect_uri={redirectUri}">Sign in</a
+    >.
+  {:else}
+    <a class="underline" href="/login/sign_in">Sign in</a>.
+  {/if}
 </div>
