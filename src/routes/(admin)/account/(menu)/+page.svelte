@@ -17,7 +17,8 @@
     console.log("redirectUri", redirectUri)
     if (redirectUri) {
       const { data: session } = await supabase.auth.getSession()
-      window.location.href = redirectUri + `/auth?token=${session.session?.access_token}`
+      window.location.href =
+        redirectUri + `/auth?token=${session.session?.access_token}`
     }
   })
 </script>
